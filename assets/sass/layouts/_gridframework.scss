@@ -6,7 +6,7 @@ $link-hover:red;
 $btn-primary:#0069d9;
 $size-array:"sm" "md" "lg";
 $media-size:"@media screen and (min-width:0px)" "@media screen and (min-width:768px)" "@media screen and (min-width:992px)";
-$font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5"
+$font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
 
 @mixin button($color: $btn-primary, $width: 60px){
   display: inline-block;
@@ -73,7 +73,6 @@ $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5"
   }
 }
 }
-
 .outer-container {
   min-width: 400px;
   max-width: 1200px;
