@@ -1,5 +1,6 @@
 @import "layouts/gridframework";
 @import "base/base";
+@import "base/typography";
 .header {
   align-items: center;
   justify-content: space-between;
@@ -8,4 +9,7 @@
     align-items: center;
     justify-content: space-between;
   }
+}
+.main-landing__text{
+  float: left;
 }

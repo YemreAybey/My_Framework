@@ -4,6 +4,7 @@ $text-default:#000;
 $link-default:#000;
 $link-hover:red;
 $btn-primary:#0069d9;
+$m-size:0.8rem;
 $size-array:"sm" "md" "lg";
 $media-size:"media screen and (min-width:0px)" "media screen and (min-width:768px)" "media screen and (min-width:992px)";
 $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
@@ -26,7 +27,9 @@ $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
   line-height: $line;
 }
 
-
+.clear{
+  clear: both;
+}
 @media screen and (min-width:0px) {
 
   @for $i from 1 through 12{
@@ -40,36 +43,36 @@ $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
   .sm-font {
     @include fonts;
   }
-  @for $i from 1 through 5 {
+  @for $i from 1 through 10 {
     .m-sm-#{$i} {
-      margin: calc(#{$i} * 0.25rem);
+      margin: calc(#{$i} * #{$m-size});
     }
     .mt-sm-#{$i} {
-      margin-top: calc(#{$i} * 0.25rem);
+      margin-top: calc(#{$i} * #{$m-size});
     }
     .mb-sm-#{$i} {
-      margin-bottom: calc(#{$i} * 0.25rem);
+      margin-bottom: calc(#{$i} * #{$m-size});
     }
     .mr-sm-#{$i} {
-      margin-right: calc(#{$i} * 0.25rem);
+      margin-right: calc(#{$i} * #{$m-size});
     }
     .ml-sm-#{$i} {
-      margin-left: calc(#{$i} * 0.25rem);
+      margin-left: calc(#{$i} * #{$m-size});
     }
     .p-sm-#{$i} {
-      padding: calc(#{$i} * 0.25rem);
+      padding: calc(#{$i} * #{$m-size});
     }
     .pt-sm-#{$i} {
-      padding-top: calc(#{$i} * 0.25rem);
+      padding-top: calc(#{$i} * #{$m-size});
     }
     .pb-sm-#{$i} {
-      padding-bottom: calc(#{$i} * 0.25rem);
+      padding-bottom: calc(#{$i} * #{$m-size});
     }
     .pr-sm-#{$i} {
-      padding-right: calc(#{$i} * 0.25rem);
+      padding-right: calc(#{$i} * #{$m-size});
     }
     .pl-sm-#{$i} {
-      padding-left: calc(#{$i} * 0.25rem);
+      padding-left: calc(#{$i} * #{$m-size});
     }
   }
 
@@ -87,36 +90,36 @@ $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
   .md-font {
     @include fonts(18px, 1.4);
   }
-  @for $i from 1 through 5 {
+  @for $i from 1 through 10 {
     .m-md-#{$i} {
-      margin: calc(#{$i} * 0.25rem);
+      margin: calc(#{$i} * #{$m-size});
     }
     .mt-md-#{$i} {
-      margin-top: calc(#{$i} * 0.25rem);
+      margin-top: calc(#{$i} * #{$m-size});
     }
     .mb-md-#{$i} {
-      margin-bottom: calc(#{$i} * 0.25rem);
+      margin-bottom: calc(#{$i} * #{$m-size});
     }
     .mr-md-#{$i} {
-      margin-right: calc(#{$i} * 0.25rem);
+      margin-right: calc(#{$i} * #{$m-size});
     }
     .ml-md-#{$i} {
-      margin-left: calc(#{$i} * 0.25rem);
+      margin-left: calc(#{$i} * #{$m-size});
     }
     .p-md-#{$i} {
-      padding: calc(#{$i} * 0.25rem);
+      padding: calc(#{$i} * #{$m-size});
     }
     .pt-md-#{$i} {
-      padding-top: calc(#{$i} * 0.25rem);
+      padding-top: calc(#{$i} * #{$m-size});
     }
     .pb-md-#{$i} {
-      padding-bottom: calc(#{$i} * 0.25rem);
+      padding-bottom: calc(#{$i} * #{$m-size});
     }
     .pr-md-#{$i} {
-      padding-right: calc(#{$i} * 0.25rem);
+      padding-right: calc(#{$i} * #{$m-size});
     }
     .pl-md-#{$i} {
-      padding-left: calc(#{$i} * 0.25rem);
+      padding-left: calc(#{$i} * #{$m-size});
     }
   }
 
@@ -133,72 +136,72 @@ $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
     }
   }
   .lg-font {
-    @include fonts(20px, 1.5);
+    @include fonts(35px, 1.5);
   }
-  @for $i from 1 through 5 {
+  @for $i from 1 through 10 {
     .m-lg-#{$i} {
-      margin: calc(#{$i} * 0.25rem);
+      margin: calc(#{$i} * #{$m-size});
     }
     .mt-lg-#{$i} {
-      margin-top: calc(#{$i} * 0.25rem);
+      margin-top: calc(#{$i} * #{$m-size});
     }
     .mb-lg-#{$i} {
-      margin-bottom: calc(#{$i} * 0.25rem);
+      margin-bottom: calc(#{$i} * #{$m-size});
     }
     .mr-lg-#{$i} {
-      margin-right: calc(#{$i} * 0.25rem);
+      margin-right: calc(#{$i} * #{$m-size});
     }
     .ml-lg-#{$i} {
-      margin-left: calc(#{$i} * 0.25rem);
+      margin-left: calc(#{$i} * #{$m-size});
     }
     .p-lg-#{$i} {
-      padding: calc(#{$i} * 0.25rem);
+      padding: calc(#{$i} * #{$m-size});
     }
     .pt-lg-#{$i} {
-      padding-top: calc(#{$i} * 0.25rem);
+      padding-top: calc(#{$i} * #{$m-size});
     }
     .pb-lg-#{$i} {
-      padding-bottom: calc(#{$i} * 0.25rem);
+      padding-bottom: calc(#{$i} * #{$m-size});
     }
     .pr-lg-#{$i} {
-      padding-right: calc(#{$i} * 0.25rem);
+      padding-right: calc(#{$i} * #{$m-size});
     }
     .pl-lg-#{$i} {
-      padding-left: calc(#{$i} * 0.25rem);
+      padding-left: calc(#{$i} * #{$m-size});
     }
   }
 
 }
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
   .m-#{$i} {
-    margin: calc(#{$i} * 0.25rem);
+    margin: calc(#{$i} * #{$m-size});
   }
   .mt-#{$i} {
-    margin-top: calc(#{$i} * 0.25rem);
+    margin-top: calc(#{$i} * #{$m-size});
   }
   .mb-#{$i} {
-    margin-bottom: calc(#{$i} * 0.25rem);
+    margin-bottom: calc(#{$i} * #{$m-size});
   }
   .mr-#{$i} {
-    margin-right: calc(#{$i} * 0.25rem);
+    margin-right: calc(#{$i} * #{$m-size});
   }
   .ml-#{$i} {
-    margin-left: calc(#{$i} * 0.25rem);
+    margin-left: calc(#{$i} * #{$m-size});
   }
   .p-#{$i} {
-    padding: calc(#{$i} * 0.25rem);
+    padding: calc(#{$i} * #{$m-size});
   }
   .pt-#{$i} {
-    padding-top: calc(#{$i} * 0.25rem);
+    padding-top: calc(#{$i} * #{$m-size});
   }
   .pb-#{$i} {
-    padding-bottom: calc(#{$i} * 0.25rem);
+    padding-bottom: calc(#{$i} * #{$m-size});
   }
   .pr-#{$i} {
-    padding-right: calc(#{$i} * 0.25rem);
+    padding-right: calc(#{$i} * #{$m-size});
   }
   .pl-#{$i} {
-    padding-left: calc(#{$i} * 0.25rem);
+    padding-left: calc(#{$i} * #{$m-size});
   }
 }
 .outer-container {
@@ -212,7 +215,7 @@ $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
   margin: 10px auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
   grid-row-gap: 10px;
 }
 .d-flex {
@@ -239,4 +242,15 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+@for $i from 1 through 20 {
+  .w-#{$i*5}{
+    width:calc(#{$i}*5%);
+  }
+}
+.m-auto{
+  margin:0 auto;
+}
+.t-c{
+  text-align: center;
 }
