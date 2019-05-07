@@ -1,0 +1,27 @@
+$f-size:14px;
+$l-height:1.2;
+$text-default:#000;
+$link-default:#000;
+$link-hover:red;
+$btn-primary:#0069d9;
+$size-array:"sm" "md" "lg";
+$media-size:"@media screen and (min-width:0px)" "@media screen and (min-width:768px)" "@media screen and (min-width:992px)";
+$font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5"
+
+@mixin button($color: $btn-primary, $width: 60px){
+  display: inline-block;
+  width:$width;
+  height: 25px;
+  padding: 5px;
+  text-align: center;
+  background: $color;
+  color:white;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+@mixin fonts($size: $f-size, $line: $l-height){
+  font-size: $size;
+  font-family: sans-serif;
+  line-height: $line;
+}
