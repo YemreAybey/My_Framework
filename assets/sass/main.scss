@@ -1,1 +1,11 @@
 @import "layouts/gridframework";
+@import "base/base";
+.header {
+  align-items: center;
+  justify-content: space-between;
+  &__buttons {
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
