@@ -8,17 +8,21 @@ $m-size:0.8rem;
 $size-array:"sm" "md" "lg";
 $media-size:"media screen and (min-width:0px)" "media screen and (min-width:768px)" "media screen and (min-width:992px)";
 $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
+$bg-none:transparent;
 
-@mixin button($color: $btn-primary, $width: 60px){
-  display: inline-block;
+@mixin button($width: 161px){
+  display: flex;
   width:$width;
-  height: 25px;
-  padding: 5px;
+  height: 40px;
   text-align: center;
-  background: $color;
-  color:white;
-  font-size: 13px;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
+  font-size: 13px;
+  transition: background-color 250ms ease, color 250ms ease;
+  font-family: 'Avenir next demi', sans-serif;
+  color: #083741;
+  text-decoration: none;
 }
 
 @mixin fonts($size: $f-size, $line: $l-height){
@@ -227,16 +231,19 @@ $font-sizes:"14px, 1.2" "18px, 1.4" "20px, 1.5";
 
 .btn {
   @include button;
+  background-color: #75b09b;
 }
-.btn-full {
-  @include button($btn-primary, 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px auto;
-  font-size: 30px;
-  height: 45px;
+.btn:hover {
+  background-color: rgba(117, 176, 155, .7);
 }
+.btn-empty {
+  @include button;
+  background-color: none;
+}
+a:active, a:hover {
+    outline: 0;
+}
+
 a {
   text-decoration: none;
   &:hover {
