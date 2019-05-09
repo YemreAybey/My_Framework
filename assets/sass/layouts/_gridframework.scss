@@ -208,6 +208,10 @@ $bg-none:transparent;
     padding-left: calc(#{$i} * #{$m-size});
   }
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .outer-container {
   min-width: 400px;
   max-width: 2000px;
@@ -223,9 +227,19 @@ $bg-none:transparent;
 }
 .d-flex {
   display: flex;
+  align-items: center;
+}
+.j-bet{
+  justify-content: space-between;
+}
+.j-cen{
+  justify-content: center;
 }
 .d-block {
   display: block;
+}
+.d-inb {
+  display: inline-block;
 }
 
 .btn {
@@ -251,8 +265,10 @@ a:active, a:hover {
 
 a {
   text-decoration: none;
-  &:hover {
+  color: #083741;
+  &:hover, &:active, &:visited {
     text-decoration: none;
+    color: rgba(8, 55, 65, .7);
   }
 }
 @for $i from 1 through 20 {

@@ -1875,6 +1875,11 @@
   padding-left: calc(10 * 0.8rem);
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .outer-container {
   min-width: 400px;
   max-width: 2000px;
@@ -1892,10 +1897,23 @@
 
 .d-flex {
   display: flex;
+  align-items: center;
+}
+
+.j-bet {
+  justify-content: space-between;
+}
+
+.j-cen {
+  justify-content: center;
 }
 
 .d-block {
   display: block;
+}
+
+.d-inb {
+  display: inline-block;
 }
 
 .btn {
@@ -1948,9 +1966,11 @@ a:active, a:hover {
 
 a {
   text-decoration: none;
+  color: #083741;
 }
-a:hover {
+a:hover, a:active, a:visited {
   text-decoration: none;
+  color: rgba(8, 55, 65, 0.7);
 }
 
 .w-5 {
@@ -2041,6 +2061,10 @@ a:hover {
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 li {
   list-style: none;
 }
@@ -2100,6 +2124,16 @@ h2 {
   line-height: 30px;
 }
 
+.last-background {
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 2px;
+  background-image: url(https://involvio.com/images/success_suite_background.svg);
+  background-position: 50% 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .card {
   border: 2px solid #f0f1f2;
   max-width: 240px;
@@ -2111,6 +2145,10 @@ h2 {
   color: #083741;
   padding: 44px 23px 33px;
   text-align: center;
+}
+.card:hover {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
 }
 .card img {
   max-width: 110px;
@@ -2127,6 +2165,78 @@ h2 {
 
 .list-title {
   font-weight: bold;
+}
+
+.before-footer {
+  width: 70%;
+  margin: 60px auto;
+}
+.before-footer ul li {
+  line-height: 3;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+.footer .the-links {
+  border-bottom: 2px solid rgba(150, 150, 150, 0.2);
+}
+.footer .the-links .social-links__insta {
+  display: inline-block;
+  padding: 22px 21px;
+  background-image: url("https://involvio.com/images/logo-instagram.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+}
+.footer .the-links .social-links__insta:hover {
+  opacity: 0.7;
+}
+.footer .the-links .social-links__in {
+  display: inline-block;
+  padding: 22px 21px;
+  background-image: url("https://involvio.com/images/linkedin.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+}
+.footer .the-links .social-links__in:hover {
+  opacity: 0.7;
+}
+.footer .the-links .social-links__twitter {
+  display: inline-block;
+  padding: 22px 21px;
+  background-image: url("https://involvio.com/images/twitter.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+}
+.footer .the-links .social-links__twitter:hover {
+  opacity: 0.7;
+}
+.footer .the-links .social-links__face {
+  display: inline-block;
+  padding: 22px 21px;
+  background-image: url("https://involvio.com/images/facebook.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+}
+.footer .the-links .social-links__face:hover {
+  opacity: 0.7;
+}
+.footer .legal-info {
+  color: rgba(8, 55, 65, 0.5);
+  line-height: 2;
+}
+.footer .legal-info p {
+  margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
