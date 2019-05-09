@@ -2047,10 +2047,19 @@ li {
 }
 
 body {
-  font-family: "Avenir next", sans-serif;
+  font-family: "Lora", "Merriweather", "Roboto Slab", sans-serif;
   color: #333;
   font-size: 14px;
   line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 .header {
@@ -2065,6 +2074,27 @@ body {
 
 .main-landing__text {
   float: left;
+}
+
+.card {
+  border: 2px solid #f0f1f2;
+  max-width: 240px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.03);
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  color: #083741;
+  padding: 44px 23px 33px;
+  text-align: center;
+}
+.card img {
+  max-width: 110px;
+  margin-bottom: 8px;
+}
+
+.list-title {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
