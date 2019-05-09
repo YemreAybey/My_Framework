@@ -19,16 +19,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   .right-background{
-    width:794px;
+    width:60%;
     height: 693px;
     background-image: url(https://involvio.com/images/hero-illustration_1.svg);
-    background-position: 0 0;
+    background-position: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
     opacity: 1;
     position: absolute;
-    left: 500px;
+    left: 450px;
     top: -10px;
   }
 &__text{
