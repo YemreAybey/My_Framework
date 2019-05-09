@@ -1905,23 +1905,42 @@
   height: 40px;
   text-align: center;
   justify-content: center;
-  background: #0069d9;
   align-items: center;
   border-radius: 5px;
-  background-color: #75b09b;
   font-size: 13px;
   transition: background-color 250ms ease, color 250ms ease;
   font-family: "Avenir next demi", sans-serif;
   color: #083741;
   text-decoration: none;
+  background-color: #75b09b;
 }
 
 .btn:hover {
   background-color: rgba(117, 176, 155, 0.7);
 }
 
-.bg-none {
-  background-color: none !important;
+.btn-empty {
+  display: flex;
+  width: 161px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: background-color 250ms ease, color 250ms ease;
+  font-family: "Avenir next demi", sans-serif;
+  color: #083741;
+  text-decoration: none;
+  background-color: none;
+}
+
+.btn-empty:hover {
+  color: #75b09b;
+}
+
+.btn-big {
+  height: 50px;
 }
 
 a:active, a:hover {
@@ -2039,7 +2058,7 @@ body {
   justify-content: space-between;
 }
 .header__buttons {
-  width: 200px;
+  width: 300px;
   align-items: center;
   justify-content: space-between;
 }

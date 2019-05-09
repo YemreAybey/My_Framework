@@ -240,6 +240,12 @@ $bg-none:transparent;
   @include button;
   background-color: none;
 }
+.btn-empty:hover {
+  color:#75b09b;
+}
+.btn-big {
+  height:50px;
+}
 a:active, a:hover {
     outline: 0;
 }
