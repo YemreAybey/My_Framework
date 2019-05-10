@@ -23,6 +23,7 @@ $bg-none:transparent;
   font-family: 'Avenir next demi', sans-serif;
   color: #083741;
   text-decoration: none;
+  z-index: 2000;
 }
 
 @mixin fonts($size: $f-size, $line: $l-height){
@@ -37,6 +38,62 @@ $bg-none:transparent;
 @media screen and (min-width:0px) {
 
   @for $i from 1 through 12{
+    .col-xs-#{$i} {
+      grid-column: span #{$i};
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .sm-font {
+    @include fonts;
+  }
+  .d-xs-none {
+    display: none !important;
+  }
+  .d-xs-block {
+    display: block !important;
+  }
+  .d-xs-flex {
+    display: flex !important;
+  }
+  @for $i from 1 through 10 {
+    .m-xs-#{$i} {
+      margin: calc(#{$i} * #{$m-size});
+    }
+    .mt-xs-#{$i} {
+      margin-top: calc(#{$i} * #{$m-size});
+    }
+    .mb-xs-#{$i} {
+      margin-bottom: calc(#{$i} * #{$m-size});
+    }
+    .mr-xs-#{$i} {
+      margin-right: calc(#{$i} * #{$m-size});
+    }
+    .ml-xs-#{$i} {
+      margin-left: calc(#{$i} * #{$m-size});
+    }
+    .p-xs-#{$i} {
+      padding: calc(#{$i} * #{$m-size});
+    }
+    .pt-xs-#{$i} {
+      padding-top: calc(#{$i} * #{$m-size});
+    }
+    .pb-xs-#{$i} {
+      padding-bottom: calc(#{$i} * #{$m-size});
+    }
+    .pr-xs-#{$i} {
+      padding-right: calc(#{$i} * #{$m-size});
+    }
+    .pl-xs-#{$i} {
+      padding-left: calc(#{$i} * #{$m-size});
+    }
+  }
+
+}
+@media screen and (min-width:578px) {
+
+  @for $i from 1 through 12{
     .col-sm-#{$i} {
       grid-column: span #{$i};
       img {
@@ -46,6 +103,15 @@ $bg-none:transparent;
   }
   .sm-font {
     @include fonts;
+  }
+  .d-sm-none {
+    display: none !important;
+  }
+  .d-sm-block {
+    display: block !important;
+  }
+  .d-sm-flex {
+    display: flex !important;
   }
   @for $i from 1 through 10 {
     .m-sm-#{$i} {
@@ -94,6 +160,15 @@ $bg-none:transparent;
   .md-font {
     @include fonts(18px, 1.4);
   }
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+  .d-md-flex {
+    display: flex !important;
+  }
   @for $i from 1 through 10 {
     .m-md-#{$i} {
       margin: calc(#{$i} * #{$m-size});
@@ -141,6 +216,15 @@ $bg-none:transparent;
   }
   .lg-font {
     @include fonts(35px, 1.5);
+  }
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+  .d-lg-flex {
+    display: flex !important;
   }
   @for $i from 1 through 10 {
     .m-lg-#{$i} {
