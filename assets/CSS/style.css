@@ -2420,7 +2420,7 @@
 }
 
 .outer-container {
-  min-width: 400px;
+  min-width: 300px;
   max-width: 2000px;
   margin: 0px auto;
 }
@@ -2608,6 +2608,10 @@ a:hover, a:active, a:visited {
 
 li {
   list-style: none;
+}
+
+h2 {
+  line-height: 1.5;
 }
 
 body {
@@ -2803,18 +2807,72 @@ h2 {
   .main-landing {
     margin: 0px auto;
     z-index: 2100;
+    height: auto;
   }
   .main-landing__text {
     width: 100%;
-    margin: 100px auto;
+    margin: 80px auto 10px auto;
     padding: 5px;
   }
   .main-landing__text .site-header {
-    width: 100%;
+    width: 70%;
     margin: 0px auto;
     font-size: 32px;
     text-align: center;
     line-height: 1.5;
+  }
+  .main-landing__text .header-par {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .main-landing__text .btn.btn-big {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .success-h2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .d-flex.j-bet.w-70.m-auto.link-container {
+    display: block;
+  }
+  .d-flex.j-bet.w-70.m-auto.link-container .legal-links.d-flex.j-bet.w-20,
+.d-flex.j-bet.w-70.m-auto.link-container .social-links.d-flex.j-bet.w-20 {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .d-flex.j-bet.w-70.m-auto.link-container .legal-links.d-flex.j-bet.w-20 a,
+.d-flex.j-bet.w-70.m-auto.link-container .social-links.d-flex.j-bet.w-20 a {
+    display: inline-block;
+    padding-right: 8px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .m-auto.header-container {
+    width: 90%;
+  }
+  .m-auto.header-container header,
+.m-auto.header-container .main-landing__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-header {
+    width: 60%;
+    font-size: 30px;
+    line-height: 2;
+  }
+
+  .header-par {
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.2;
   }
 }
 
