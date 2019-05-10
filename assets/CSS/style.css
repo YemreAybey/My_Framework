@@ -2795,6 +2795,12 @@ h2 {
   }
 }
 @media screen and (max-width: 767px) {
+  header {
+    position: fixed;
+    width: 90%;
+    z-index: 3000;
+  }
+
   .header__buttons {
     justify-content: flex-end;
   }
