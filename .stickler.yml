@@ -1,2 +1,3 @@
 linters:
+  css:lint:
   stylelint:
