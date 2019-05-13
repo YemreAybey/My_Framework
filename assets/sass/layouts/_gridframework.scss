@@ -335,7 +335,7 @@ $bg-none:transparent;
 }
 .btn-empty {
   @include button;
-  background-color: none;
+  background-color: transparent;
 }
 .btn-empty:hover {
   color:#75b09b;
