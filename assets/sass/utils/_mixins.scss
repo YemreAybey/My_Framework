@@ -1,9 +1,7 @@
 @mixin social-link ($url) {
   display: inline-block;
   padding: 22px 21px;
-  background-image: url($url);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background: url($url) 50% 50% no-repeat;
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
    &:hover {

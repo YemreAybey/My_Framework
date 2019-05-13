@@ -14,17 +14,11 @@
 .main-landing {
   overflow: hidden;
   height: 707px;
-  background-image: url(../images/bg.svg);
-  background-position: 100% 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../images/bg.svg) 100% 100% / cover no-repeat;
   .right-background{
     width:60%;
     height: 693px;
-    background-image: url(https://involvio.com/images/hero-illustration_1.svg);
-    background-position: 0px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(https://involvio.com/images/hero-illustration_1.svg) 0px 0px / cover no-repeat;
     transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
     opacity: 1;
     position: absolute;
@@ -43,16 +37,13 @@
   max-width: 100%;
   padding-top: 30px;
   padding-bottom: 2px;
-  background-image: url(https://involvio.com/images/success_suite_background.svg);
-  background-position: 50% 160px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(https://involvio.com/images/success_suite_background.svg) 50% 160px / cover no-repeat;
 }
 .card{
     border: 2px solid #f0f1f2;
     max-width: 240px;
     border-radius: 8px;
-    background-color: #fff;
+    background: #fff;
     box-shadow: 0 16px 20px 0 rgba(0, 0, 0, .03);
     -webkit-transition: all 250ms ease;
     transition: all 250ms ease;

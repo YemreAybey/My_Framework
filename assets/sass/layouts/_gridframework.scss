@@ -35,7 +35,6 @@ $bg-none:transparent;
 .clear{
   clear: both;
 }
-@media screen and (min-width:0px) {
 
   @for $i from 1 through 12{
     .col-xs-#{$i} {
@@ -89,8 +88,6 @@ $bg-none:transparent;
       padding-left: calc(#{$i} * #{$m-size});
     }
   }
-
-}
 @media screen and (min-width:578px) {
 
   @for $i from 1 through 12{
