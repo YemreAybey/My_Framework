@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass":"sass --watch assets/sass/main.scss:assets/CSS/style.css --style expanded",
+    "sass":"sass --watch assets/sass/layouts/gridframework.scss:assets/CSS/framework.css --style expanded",
     "prefix": "postcss assets/CSS/style.css --use autoprefixer"
   },
   "author": "gerkx",
