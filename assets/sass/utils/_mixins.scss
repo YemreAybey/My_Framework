@@ -1,0 +1,10 @@
+@mixin social-link ($url) {
+  display: inline-block;
+  padding: 22px 21px;
+  background: url($url) 50% 50% no-repeat;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+   &:hover {
+     opacity: 0.7;
+   }
+}
