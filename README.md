@@ -7,6 +7,6 @@ using:
 - *HTML, HTML5*
 - *CSS3, SASS and BEM*
 - *Framework created by Yunus Emre AYBEY and Onur Onat SURMELI*   
-You can find the live version [here](https://raw.githack.com/YemreAybey/Our_Framework/development/index.html)
+You can find the live version [here](https://yemreaybey.github.io/Our_Framework/)
 
 **Have a Nice Day**
